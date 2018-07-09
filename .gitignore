@@ -5,7 +5,7 @@
 .DS_Store
 .cache
 
-
+.local
 .idea/
 
 dist/
