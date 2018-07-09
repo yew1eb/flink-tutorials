@@ -45,5 +45,5 @@ flink version: 1.5.0
 
 
 ## References
-<https://github.com/JerryLead/SparkInternals/tree/master/markdown>
-我的简书 <https://www.jianshu.com/writer#/notebooks/25106052/notes/27319497>
+* &lt;[https://github.com/JerryLead/SparkInternals/tree/master/markdown](https://github.com/JerryLead/SparkInternals/tree/master/markdown)&gt;
+* &lt;[https://yuedu.163.com/source/b766363446c544fc9b487803baf1a8e7\_4](https://yuedu.163.com/source/b766363446c544fc9b487803baf1a8e7_4)&gt; 
