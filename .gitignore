@@ -11,3 +11,5 @@
 dist/
 
 target/
+
+flink-release-1.5
