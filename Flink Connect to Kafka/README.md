@@ -24,15 +24,16 @@ FlinkKafkaConsumerBase 是核心类，它继承自 SourceFunction 接口，通�
  * The fetcher also handles the explicit communication with ZooKeeper to fetch initial offsets
  * and to write offsets to ZooKeeper.
 
-
 The threading model is implemented differently between the Kafka08Fetcher and all other fetcher versions higher than 0.9+ because the Kafka Java clients used between these versions have different abstraction levels.
+
+
 
 The Kafka08Fetcher still uses the low-level `SimpleConsumer` API, which only allows connection to a single Kafka broker. Therefore, the Kafka08Fetcher maintains a thread for each broker that it connects to. If a subtask’s assigned partitions all exist on the same Kafka broker, only one thread will be created.
 
 On the other hand, in versions 0.9+, the high-level `KafkaConsumer` API is used, which hides away the complexity for per-broker connections. I believe that the `KafkaConsumer` client still creates per-broker threads internally, if its assigned partitions span multiple brokers.
 
-
 ## 参考文献
+
 [1] [Connecting Apache Flink to the World - Reviewing the streaming connectors, 2016, Robert Metzger](https://www.slideshare.net/FlinkForward/robert-metzger-connecting-apache-flink-to-the-world-reviewing-the-streaming-connectors)
 
 

@@ -1,0 +1,146 @@
+2018-08-04 19:45:31,811 INFO  org.apache.flink.client.cli.CliFrontend                       - --------------------------------------------------------------------------------
+2018-08-04 19:45:31,813 INFO  org.apache.flink.client.cli.CliFrontend                       -  Starting Command Line Client (Version: 1.6-SNAPSHOT, Rev:55a1db2, Date:01.08.2018 @ 02:25:33 CST)
+2018-08-04 19:45:31,813 INFO  org.apache.flink.client.cli.CliFrontend                       -  OS current user: sankuai
+2018-08-04 19:45:32,340 INFO  org.apache.flink.client.cli.CliFrontend                       -  Current Hadoop/Kerberos user: hadoop-rt
+2018-08-04 19:45:32,340 INFO  org.apache.flink.client.cli.CliFrontend                       -  JVM: Java HotSpot(TM) 64-Bit Server VM - Oracle Corporation - 1.8/25.112-b15
+2018-08-04 19:45:32,340 INFO  org.apache.flink.client.cli.CliFrontend                       -  Maximum heap size: 1749 MiBytes
+2018-08-04 19:45:32,340 INFO  org.apache.flink.client.cli.CliFrontend                       -  JAVA_HOME: /usr/local/jdk1.8.0_112/jre
+2018-08-04 19:45:32,342 INFO  org.apache.flink.client.cli.CliFrontend                       -  Hadoop version: 2.7.1-mt-SNAPSHOT
+2018-08-04 19:45:32,343 INFO  org.apache.flink.client.cli.CliFrontend                       -  JVM Options:
+2018-08-04 19:45:32,343 INFO  org.apache.flink.client.cli.CliFrontend                       -     -Djava.security.krb5.conf=/opt/meituan/hadoop-standalone.2.7.1/etc/hadoop/krb5.conf
+2018-08-04 19:45:32,343 INFO  org.apache.flink.client.cli.CliFrontend                       -     -Dlog.file=/opt/meituan/flink-1.6-SNAPSHOT/log/flink-sankuai-client-dx-data-rt-rtsql01.dx.sankuai.com.log
+2018-08-04 19:45:32,343 INFO  org.apache.flink.client.cli.CliFrontend                       -     -Dlog4j.configuration=file:/opt/meituan/flink-1.6-SNAPSHOT/conf/log4j-cli.properties
+2018-08-04 19:45:32,343 INFO  org.apache.flink.client.cli.CliFrontend                       -     -Dlogback.configurationFile=file:/opt/meituan/flink-1.6-SNAPSHOT/conf/logback.xml
+2018-08-04 19:45:32,343 INFO  org.apache.flink.client.cli.CliFrontend                       -  Program Arguments:
+2018-08-04 19:45:32,343 INFO  org.apache.flink.client.cli.CliFrontend                       -     run
+2018-08-04 19:45:32,343 INFO  org.apache.flink.client.cli.CliFrontend                       -     -m
+2018-08-04 19:45:32,343 INFO  org.apache.flink.client.cli.CliFrontend                       -     yarn-cluster
+2018-08-04 19:45:32,343 INFO  org.apache.flink.client.cli.CliFrontend                       -     -p
+2018-08-04 19:45:32,343 INFO  org.apache.flink.client.cli.CliFrontend                       -     9
+2018-08-04 19:45:32,343 INFO  org.apache.flink.client.cli.CliFrontend                       -     -d
+2018-08-04 19:45:32,343 INFO  org.apache.flink.client.cli.CliFrontend                       -     -yid
+2018-08-04 19:45:32,343 INFO  org.apache.flink.client.cli.CliFrontend                       -     application_1530686317259_3534169
+2018-08-04 19:45:32,343 INFO  org.apache.flink.client.cli.CliFrontend                       -     /home/sankuai/flink_test_taskset/consumekafkawithwindowagg-1.6/consumekafkawithwindowagg-1.6-0.0.1-SNAPSHOT.jar
+2018-08-04 19:45:32,344 INFO  org.apache.flink.client.cli.CliFrontend                       -     --online
+2018-08-04 19:45:32,344 INFO  org.apache.flink.client.cli.CliFrontend                       -     true
+2018-08-04 19:45:32,344 INFO  org.apache.flink.client.cli.CliFrontend                       -  Classpath: /opt/meituan/flink-1.6-SNAPSHOT/lib/flink-python_2.11-1.6-SNAPSHOT.jar:/opt/meituan/flink-1.6-SNAPSHOT/lib/flink-shaded-hadoop2-uber-1.6-SNAPSHOT.jar:/opt/meituan/flink-1.6-SNAPSHOT/lib/log4j-1.2.17.jar:/opt/meituan/flink-1.6-SNAPSHOT/lib/slf4j-log4j12-1.7.7.jar:/opt/meituan/flink-1.6-SNAPSHOT/lib/flink-dist_2.11-1.6-SNAPSHOT.jar::/opt/meituan/hadoop-standalone.2.7.1/etc/hadoop:/opt/meituan/hadoop-standalone.2.7.1/etc/hadoop
+2018-08-04 19:45:32,344 INFO  org.apache.flink.client.cli.CliFrontend                       - --------------------------------------------------------------------------------
+2018-08-04 19:45:32,347 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.rpc.address, localhost
+2018-08-04 19:45:32,348 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.rpc.port, 6123
+2018-08-04 19:45:32,348 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.heap.size, 1024m
+2018-08-04 19:45:32,348 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.heap.size, 1024m
+2018-08-04 19:45:32,348 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.numberOfTaskSlots, 1
+2018-08-04 19:45:32,348 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: parallelism.default, 1
+2018-08-04 19:45:32,349 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: rest.port, 8081
+2018-08-04 19:45:32,349 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.backend, rocksdb
+2018-08-04 19:45:32,349 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.backend.fs.checkpointdir, viewfs://hadoop-meituan/user/hadoop-rt/flink-bj/checkpoints
+2018-08-04 19:45:32,349 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.checkpoints.dir, viewfs://hadoop-meituan/user/hadoop-rt/flink-bj/checkpoints-external
+2018-08-04 19:45:32,349 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.savepoints.dir, viewfs://hadoop-meituan/user/hadoop-rt/flink-bj/savepoints
+2018-08-04 19:45:32,364 INFO  org.apache.flink.yarn.cli.FlinkYarnSessionCli                 - Found Yarn properties file under /tmp/.yarn-properties-sankuai.
+2018-08-04 19:45:32,426 DEBUG org.apache.flink.core.fs.FileSystem                           - Loading extension file systems via services
+2018-08-04 19:45:32,428 DEBUG org.apache.flink.core.fs.FileSystem                           - Added file system maprfs:org.apache.flink.runtime.fs.maprfs.MapRFsFactory
+2018-08-04 19:45:32,590 DEBUG org.apache.flink.runtime.util.HadoopUtils                     - Cannot find hdfs-default configuration-file path in Flink config.
+2018-08-04 19:45:32,591 DEBUG org.apache.flink.runtime.util.HadoopUtils                     - Cannot find hdfs-site configuration-file path in Flink config.
+2018-08-04 19:45:32,591 DEBUG org.apache.flink.runtime.util.HadoopUtils                     - Adding /opt/meituan/hadoop-standalone.2.7.1/etc/hadoop/core-site.xml to hadoop configuration
+2018-08-04 19:45:32,592 DEBUG org.apache.flink.runtime.util.HadoopUtils                     - Adding /opt/meituan/hadoop-standalone.2.7.1/etc/hadoop/hdfs-site.xml to hadoop configuration
+2018-08-04 19:45:32,628 INFO  org.apache.flink.runtime.security.modules.HadoopModule        - Hadoop user set to hadoop-rt/dx-data-rt-rtsql01.dx.sankuai.com@SANKUAI.COM (auth:KERBEROS)
+2018-08-04 19:45:32,640 INFO  org.apache.flink.client.cli.CliFrontend                       - Running 'run' command.
+2018-08-04 19:45:32,644 INFO  org.apache.flink.client.cli.CliFrontend                       - Building program from JAR file
+2018-08-04 19:45:32,872 INFO  org.apache.flink.yarn.cli.FlinkYarnSessionCli                 - No path for the flink jar passed. Using the location of class org.apache.flink.yarn.YarnClusterDescriptor to locate the jar
+2018-08-04 19:45:33,323 INFO  org.apache.flink.yarn.AbstractYarnClusterDescriptor           - Found application JobManager host name 'gha-data-hdp-dn0076.gh.sankuai.com' and port '49626' from supplied application id 'application_1530686317259_3534169'
+2018-08-04 19:45:33,481 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.logging.InternalLoggerFactory  - Using SLF4J as the default logging framework
+2018-08-04 19:45:33,495 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.PlatformDependent0  - -Dio.netty.noUnsafe: false
+2018-08-04 19:45:33,496 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.PlatformDependent0  - Java version: 8
+2018-08-04 19:45:33,496 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.PlatformDependent0  - sun.misc.Unsafe.theUnsafe: available
+2018-08-04 19:45:33,497 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.PlatformDependent0  - sun.misc.Unsafe.copyMemory: available
+2018-08-04 19:45:33,497 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.PlatformDependent0  - java.nio.Buffer.address: available
+2018-08-04 19:45:33,498 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.PlatformDependent0  - direct buffer constructor: available
+2018-08-04 19:45:33,498 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.PlatformDependent0  - java.nio.Bits.unaligned: available, true
+2018-08-04 19:45:33,498 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.PlatformDependent0  - jdk.internal.misc.Unsafe.allocateUninitializedArray(int): unavailable prior to Java9
+2018-08-04 19:45:33,498 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.PlatformDependent0  - java.nio.DirectByteBuffer.<init>(long, int): available
+2018-08-04 19:45:33,498 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.PlatformDependent  - sun.misc.Unsafe: available
+2018-08-04 19:45:33,499 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.PlatformDependent  - -Dio.netty.tmpdir: /tmp (java.io.tmpdir)
+2018-08-04 19:45:33,499 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.PlatformDependent  - -Dio.netty.bitMode: 64 (sun.arch.data.model)
+2018-08-04 19:45:33,500 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.PlatformDependent  - -Dio.netty.noPreferDirect: false
+2018-08-04 19:45:33,500 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.PlatformDependent  - -Dio.netty.maxDirectMemory: 1834483712 bytes
+2018-08-04 19:45:33,500 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.PlatformDependent  - -Dio.netty.uninitializedArrayAllocationThreshold: -1
+2018-08-04 19:45:33,500 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.CleanerJava6  - java.nio.ByteBuffer.cleaner(): available
+2018-08-04 19:45:33,505 DEBUG org.apache.flink.shaded.netty4.io.netty.channel.MultithreadEventLoopGroup  - -Dio.netty.eventLoopThreads: 8
+2018-08-04 19:45:33,523 DEBUG org.apache.flink.shaded.netty4.io.netty.channel.nio.NioEventLoop  - -Dio.netty.noKeySetOptimization: false
+2018-08-04 19:45:33,524 DEBUG org.apache.flink.shaded.netty4.io.netty.channel.nio.NioEventLoop  - -Dio.netty.selectorAutoRebuildThreshold: 512
+2018-08-04 19:45:33,530 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.PlatformDependent  - org.jctools-core.MpscChunkedArrayQueue: available
+2018-08-04 19:45:33,542 INFO  org.apache.flink.runtime.rest.RestClient                      - Rest client endpoint started.
+2018-08-04 19:45:33,544 DEBUG org.apache.flink.client.cli.CliFrontend                       - Client slots is set to -1
+2018-08-04 19:45:33,544 DEBUG org.apache.flink.client.cli.CliFrontend                       - SavepointRestoreSettings.none()
+2018-08-04 19:45:33,544 DEBUG org.apache.flink.client.cli.CliFrontend                       - User parallelism is set to 9
+2018-08-04 19:45:33,544 INFO  org.apache.flink.client.cli.CliFrontend                       - Starting execution of program
+2018-08-04 19:45:33,544 INFO  org.apache.flink.client.program.rest.RestClusterClient        - Starting program in interactive mode (detached: true)
+2018-08-04 19:45:33,659 DEBUG org.apache.flink.streaming.api.graph.StreamGraphGenerator     - Transforming OneInputTransformation{id=2, name='Flat Map', outputType=Java Tuple2<Integer, Integer>, parallelism=9}
+2018-08-04 19:45:33,659 DEBUG org.apache.flink.streaming.api.graph.StreamGraphGenerator     - Transforming SourceTransformation{id=1, name='Custom Source', outputType=String, parallelism=9}
+2018-08-04 19:45:33,662 DEBUG org.apache.flink.streaming.api.graph.StreamGraph              - Vertex: 1
+2018-08-04 19:45:33,663 DEBUG org.apache.flink.streaming.api.graph.StreamGraph              - Vertex: 2
+2018-08-04 19:45:33,664 DEBUG org.apache.flink.streaming.api.graph.StreamGraphGenerator     - Transforming OneInputTransformation{id=4, name='Window(TumblingEventTimeWindows(60000), EventTimeTrigger, ReduceFunction$2, WindowFunction$3)', outputType=Java Tuple4<Integer, Long, Long, Integer>, parallelism=9}
+2018-08-04 19:45:33,664 DEBUG org.apache.flink.streaming.api.graph.StreamGraphGenerator     - Transforming PartitionTransformation{id=3, name='Partition', outputType=Java Tuple2<Integer, Integer>, parallelism=9}
+2018-08-04 19:45:33,665 DEBUG org.apache.flink.streaming.api.graph.StreamGraph              - Vertex: 4
+2018-08-04 19:45:33,665 DEBUG org.apache.flink.streaming.api.graph.StreamGraphGenerator     - Transforming SinkTransformation{id=5, name='Print to Std. Out', outputType=GenericType<java.lang.Object>, parallelism=9}
+2018-08-04 19:45:33,665 DEBUG org.apache.flink.streaming.api.graph.StreamGraph              - Vertex: 5
+2018-08-04 19:45:33,665 WARN  org.apache.flink.streaming.api.environment.StreamContextEnvironment  - Job was executed in detached mode, the results will be available on completion.
+2018-08-04 19:45:33,679 DEBUG org.apache.flink.streaming.api.graph.StreamGraphHasherV2      - Generated hash 'bc764cd8ddf7a0cff126f51c16239658' for node 'Source: Custom Source-1' {id: 1, parallelism: 9, user function: org.apache.flink.streaming.connectors.kafka.FlinkKafkaConsumer08}
+2018-08-04 19:45:33,680 DEBUG org.apache.flink.streaming.api.graph.StreamGraphHasherV2      - Generated hash '0a448493b4782967b150582570326227' for node 'Flat Map-2' {id: 2, parallelism: 9, user function: com.sankuai.flink.example.Driver$1}
+2018-08-04 19:45:33,680 DEBUG org.apache.flink.streaming.api.graph.StreamGraphHasherV2      - Generated hash 'ea632d67b7d595e5b851708ae9ad79d6' for node 'Window(TumblingEventTimeWindows(60000), EventTimeTrigger, ReduceFunction$2, WindowFunction$3)-4' {id: 4, parallelism: 9, user function: org.apache.flink.streaming.runtime.operators.windowing.functions.InternalSingleValueWindowFunction}
+2018-08-04 19:45:33,680 DEBUG org.apache.flink.streaming.api.graph.StreamGraphHasherV2      - Generated hash '6d2677a0ecc3fd8df0b72ec675edf8f4' for node 'Sink: Print to Std. Out-5' {id: 5, parallelism: 9, user function: org.apache.flink.streaming.api.functions.sink.PrintSinkFunction}
+2018-08-04 19:45:33,681 DEBUG org.apache.flink.streaming.api.graph.StreamingJobGraphGenerator  - Parallelism set: 9 for 5
+2018-08-04 19:45:33,693 DEBUG org.apache.flink.streaming.api.graph.StreamingJobGraphGenerator  - Parallelism set: 9 for 4
+2018-08-04 19:45:33,727 DEBUG org.apache.flink.streaming.api.graph.StreamingJobGraphGenerator  - CONNECTED: ForwardPartitioner - 4 -> 5
+2018-08-04 19:45:33,728 DEBUG org.apache.flink.streaming.api.graph.StreamingJobGraphGenerator  - Parallelism set: 9 for 2
+2018-08-04 19:45:33,731 DEBUG org.apache.flink.streaming.api.graph.StreamingJobGraphGenerator  - CONNECTED: KeyGroupStreamPartitioner - 2 -> 4
+2018-08-04 19:45:33,731 DEBUG org.apache.flink.streaming.api.graph.StreamingJobGraphGenerator  - Parallelism set: 9 for 1
+2018-08-04 19:45:33,734 DEBUG org.apache.flink.streaming.api.graph.StreamingJobGraphGenerator  - CONNECTED: ForwardPartitioner - 1 -> 2
+2018-08-04 19:45:33,745 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.rpc.address, localhost
+2018-08-04 19:45:33,745 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.rpc.port, 6123
+2018-08-04 19:45:33,745 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: jobmanager.heap.size, 1024m
+2018-08-04 19:45:33,746 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.heap.size, 1024m
+2018-08-04 19:45:33,746 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: taskmanager.numberOfTaskSlots, 1
+2018-08-04 19:45:33,746 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: parallelism.default, 1
+2018-08-04 19:45:33,746 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: rest.port, 8081
+2018-08-04 19:45:33,746 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.backend, rocksdb
+2018-08-04 19:45:33,747 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.backend.fs.checkpointdir, viewfs://hadoop-meituan/user/hadoop-rt/flink-bj/checkpoints
+2018-08-04 19:45:33,747 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.checkpoints.dir, viewfs://hadoop-meituan/user/hadoop-rt/flink-bj/checkpoints-external
+2018-08-04 19:45:33,747 INFO  org.apache.flink.configuration.GlobalConfiguration            - Loading configuration property: state.savepoints.dir, viewfs://hadoop-meituan/user/hadoop-rt/flink-bj/savepoints
+2018-08-04 19:45:33,751 INFO  org.apache.flink.client.program.rest.RestClusterClient        - Submitting job e04493249c72dea9cc5a0ac0c047f9ee (detached: true).
+2018-08-04 19:45:33,793 DEBUG org.apache.flink.runtime.rest.RestClient                      - Sending request of class class org.apache.flink.runtime.rest.messages.job.JobSubmitRequestBody to gha-data-hdp-dn0076.gh.sankuai.com:49626/jobs
+2018-08-04 19:45:33,867 DEBUG org.apache.flink.shaded.netty4.io.netty.util.ResourceLeakDetector  - -Dorg.apache.flink.shaded.netty4.io.netty.leakDetection.level: simple
+2018-08-04 19:45:33,867 DEBUG org.apache.flink.shaded.netty4.io.netty.util.ResourceLeakDetector  - -Dorg.apache.flink.shaded.netty4.io.netty.leakDetection.targetRecords: 4
+2018-08-04 19:45:33,875 DEBUG org.apache.flink.shaded.netty4.io.netty.buffer.AbstractByteBuf  - -Dorg.apache.flink.shaded.netty4.io.netty.buffer.bytebuf.checkAccessible: true
+2018-08-04 19:45:33,876 DEBUG org.apache.flink.shaded.netty4.io.netty.util.ResourceLeakDetectorFactory  - Loaded default ResourceLeakDetector: org.apache.flink.shaded.netty4.io.netty.util.ResourceLeakDetector@7ca570a4
+2018-08-04 19:45:33,902 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.InternalThreadLocalMap  - -Dio.netty.threadLocalMap.stringBuilder.initialSize: 1024
+2018-08-04 19:45:33,902 DEBUG org.apache.flink.shaded.netty4.io.netty.util.internal.InternalThreadLocalMap  - -Dio.netty.threadLocalMap.stringBuilder.maxSize: 4096
+2018-08-04 19:45:33,903 DEBUG org.apache.flink.shaded.netty4.io.netty.buffer.PooledByteBufAllocator  - -Dio.netty.allocator.numHeapArenas: 8
+2018-08-04 19:45:33,904 DEBUG org.apache.flink.shaded.netty4.io.netty.buffer.PooledByteBufAllocator  - -Dio.netty.allocator.numDirectArenas: 8
+2018-08-04 19:45:33,904 DEBUG org.apache.flink.shaded.netty4.io.netty.buffer.PooledByteBufAllocator  - -Dio.netty.allocator.pageSize: 8192
+2018-08-04 19:45:33,904 DEBUG org.apache.flink.shaded.netty4.io.netty.buffer.PooledByteBufAllocator  - -Dio.netty.allocator.maxOrder: 11
+2018-08-04 19:45:33,904 DEBUG org.apache.flink.shaded.netty4.io.netty.buffer.PooledByteBufAllocator  - -Dio.netty.allocator.chunkSize: 16777216
+2018-08-04 19:45:33,904 DEBUG org.apache.flink.shaded.netty4.io.netty.buffer.PooledByteBufAllocator  - -Dio.netty.allocator.tinyCacheSize: 512
+2018-08-04 19:45:33,904 DEBUG org.apache.flink.shaded.netty4.io.netty.buffer.PooledByteBufAllocator  - -Dio.netty.allocator.smallCacheSize: 256
+2018-08-04 19:45:33,904 DEBUG org.apache.flink.shaded.netty4.io.netty.buffer.PooledByteBufAllocator  - -Dio.netty.allocator.normalCacheSize: 64
+2018-08-04 19:45:33,904 DEBUG org.apache.flink.shaded.netty4.io.netty.buffer.PooledByteBufAllocator  - -Dio.netty.allocator.maxCachedBufferCapacity: 32768
+2018-08-04 19:45:33,904 DEBUG org.apache.flink.shaded.netty4.io.netty.buffer.PooledByteBufAllocator  - -Dio.netty.allocator.cacheTrimInterval: 8192
+2018-08-04 19:45:33,904 DEBUG org.apache.flink.shaded.netty4.io.netty.buffer.PooledByteBufAllocator  - -Dio.netty.allocator.useCacheForAllThreads: true
+2018-08-04 19:45:33,910 DEBUG org.apache.flink.shaded.netty4.io.netty.buffer.ByteBufUtil    - -Dio.netty.allocator.type: pooled
+2018-08-04 19:45:33,910 DEBUG org.apache.flink.shaded.netty4.io.netty.buffer.ByteBufUtil    - -Dio.netty.threadLocalDirectBufferSize: 0
+2018-08-04 19:45:33,910 DEBUG org.apache.flink.shaded.netty4.io.netty.buffer.ByteBufUtil    - -Dio.netty.maxThreadLocalCharBufferSize: 16384
+2018-08-04 19:45:33,928 DEBUG org.apache.flink.shaded.netty4.io.netty.channel.DefaultChannelId  - -Dio.netty.processId: 746 (auto-detected)
+2018-08-04 19:45:33,930 DEBUG org.apache.flink.shaded.netty4.io.netty.util.NetUtil          - -Djava.net.preferIPv4Stack: false
+2018-08-04 19:45:33,930 DEBUG org.apache.flink.shaded.netty4.io.netty.util.NetUtil          - -Djava.net.preferIPv6Addresses: false
+2018-08-04 19:45:33,931 DEBUG org.apache.flink.shaded.netty4.io.netty.util.NetUtil          - Loopback interface: lo (lo, 127.0.0.1)
+2018-08-04 19:45:33,932 DEBUG org.apache.flink.shaded.netty4.io.netty.util.NetUtil          - /proc/sys/net/core/somaxconn: 65535
+2018-08-04 19:45:33,933 DEBUG org.apache.flink.shaded.netty4.io.netty.channel.DefaultChannelId  - -Dio.netty.machineId: 00:22:1b:ff:fe:03:78:15 (auto-detected)
+2018-08-04 19:45:33,998 DEBUG org.apache.flink.shaded.netty4.io.netty.util.Recycler         - -Dio.netty.recycler.maxCapacityPerThread: 4096
+2018-08-04 19:45:33,999 DEBUG org.apache.flink.shaded.netty4.io.netty.util.Recycler         - -Dio.netty.recycler.maxSharedCapacityFactor: 2
+2018-08-04 19:45:33,999 DEBUG org.apache.flink.shaded.netty4.io.netty.util.Recycler         - -Dio.netty.recycler.linkCapacity: 16
+2018-08-04 19:45:34,005 DEBUG org.apache.flink.shaded.netty4.io.netty.util.Recycler         - -Dio.netty.recycler.ratio: 8
+2018-08-04 19:45:36,084 DEBUG org.apache.flink.runtime.rest.RestClient                      - Received response {"jobUrl":"/jobs/e04493249c72dea9cc5a0ac0c047f9ee"}.
+2018-08-04 19:45:36,107 INFO  org.apache.flink.client.cli.CliFrontend                       - Job has been submitted with JobID e04493249c72dea9cc5a0ac0c047f9ee
+2018-08-04 19:45:36,108 INFO  org.apache.flink.runtime.rest.RestClient                      - Shutting down rest endpoint.
+2018-08-04 19:45:36,110 INFO  org.apache.flink.runtime.rest.RestClient                      - Rest endpoint shutdown complete.
+2018-08-04 19:45:36,112 DEBUG org.apache.flink.shaded.netty4.io.netty.buffer.PoolThreadCache  - Freed 18 thread-local buffer(s) from thread: flink-rest-client-netty-1-1
